@@ -14,7 +14,7 @@ It includes basic implementations of data analysis and machine learning methods 
 ---
 
 ## 💻 Contents
-
+* Ridge/Lasso regression
 * PCA (Principal Component Analysis)
 
 ---
