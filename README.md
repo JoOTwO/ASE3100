@@ -1,60 +1,29 @@
-# 📊 PCA Implementation
+# ✈️ ASE3100 - Aerospace Big Data
+
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python\&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy\&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C)
 
 ## 📌 Overview
 
-This project implements **Principal Component Analysis (PCA)** using NumPy.
+This repository contains practice codes for the course
+**ASE3100 (Aerospace Big Data)**.
 
-The goal is to understand how data can be reduced from higher dimensions to lower dimensions while preserving important information.
-
----
-
-## ⚙️ Method
-
-The PCA process:
-
-1. Center the data
-2. Compute covariance matrix
-3. Perform eigen decomposition
-4. Select principal component (largest eigenvalue)
-5. Project data onto new axis
+It includes basic implementations of data analysis and machine learning methods using Python.
 
 ---
 
-## 💻 Code
+## 💻 Contents
 
-```python
-X_c = X - X.mean(axis=0)
-cov = np.cov(X_c, rowvar=False)
-
-eigvals, eigvecs = np.linalg.eig(cov)
-pc1 = eigvecs[:, np.argmax(eigvals)]
-
-X_pca = X_c @ pc1
-```
+* PCA (Principal Component Analysis)
 
 ---
 
-## 📈 Result
+## 🎯 Purpose
 
-* Reduced 2D data → 1D
-* Preserved most of the variance in the data
-
----
-
-## 🧠 What I Learned
-
-* PCA finds directions of maximum variance
-* Eigenvectors define new coordinate axes
-* Dimensionality reduction can simplify data while keeping key information
+* Practice implementing algorithms from scratch
+* Understand how mathematical concepts are translated into code
+* Build a foundation for data-driven aerospace applications
 
 ---
 
-## 🎯 Motivation
-
-This concept is useful in aerospace applications such as:
-
-* Sensor data analysis
-* Noise reduction
-* State estimation
-
----
